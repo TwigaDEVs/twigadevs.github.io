@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Near Twiga</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css"> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  
+    <style>
+        .bgdiv{
+            background-color:  #048898;
+            
+        }
+        .cv{
+            color: #f3f6fd !important;
+        }
+        .sdc{
+            color:#048898;
+            font-size: medium;
+        }
+        .nav-item {
+            font-size:18px;
+            text-transform:uppercase;
+            height:82px;
+            line-height:64px;
+          }
+          .flare {
+            background:#048898;
+          }
+          .flare a.nav-link {
+            color:#fff !important
+          }
+          .topbarElements > div:nth-of-type(1){
+            font-size:16px;
+            margin:12px 32px;
+            color:#ef662b
+          }
+          @media screen and (min-width:1040px){
+            .flare { margin-right:-15px; }
+          }
+          @media screen and (max-width:1029px){
+            .navbar-nav {
+              margin-bottom:15px;
+              text-align:center
+            }
+            .nav-item {
+              background : rgba(95, 161, 142, 0.1);
+              margin:2px;
+            }
+          }
+          .bgnav{
+            background-color: rgb(233, 233, 233) !important;
+            color: #000;
+          }
+          .txt{
+            color: rgb(37, 153, 153);
+          }
+          .cc{
+            color: rgb(37, 153, 153);
+          }
+          /*process-box*/
+
+
+.process-box{
+    background: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 2px 2px 7px 0 #00000057;
+}
+.process-left:after{
+        content: "";
+    border-top: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-right: 15px solid #ffffff;
+    display: inline-grid;
+    position: absolute;
+    right: -15px;
+    top: 42%;
+    transform: rotate(45deg);
+    box-shadow: 3px -2px 3px 0px #00000036;
+    z-index: 1;
+}
+.process-right:after{
+        content: "";
+    border-top: 15px solid #ffffff00;
+    border-bottom: 15px solid #ffffff;
+    border-left: 15px solid #ffffff;
+    border-right: 15px solid #ffffff00;
+    display: inline-grid;
+    position: absolute;
+    left: -15px;
+    top: 42%;
+    transform: rotate(45deg);
+    box-shadow: -1px 1px 3px 0px #0000001a;
+    z-index: 1;
+}
+.process-step{
+    background: #00BCD4;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    height: 100%;
+    padding-top: 8px;
+    position: relative;
+    top: -26px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: -6px 8px 0px 0px #00000014;
+}
+.process-point-right{
+    background: #ffffff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 8px solid #00bcd4;
+    box-shadow: 0 0 0px 4px #5c5c5c;
+    margin: auto 0;
+    position: absolute;
+    bottom: 40px;
+    left: -63px;
+}
+.process-point-right:before{
+    content: "";
+    height: 144px;
+    width: 11px;
+    background: #5c5c5c;
+    display: inline-grid;
+    transform: rotate(36deg);
+    position: relative;
+    left: -50px;
+    top: -0px;
+}
+.process-point-left{
+    background: #ffffff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 8px solid #00bcd4;
+    box-shadow: 0 0 0px 4px #5c5c5c;
+    margin: auto 0;
+    position: absolute;
+    bottom: 40px;
+    right: -63px;
+}
+.process-point-left:before {
+    content: "";
+    height: 144px;
+    width: 11px;
+    background: #5c5c5c;
+    display: inline-grid;
+    transform: rotate(-38deg);
+    position: relative;
+    left: 50px;
+    top: 0px;
+
+}
+
+.process-last:before{
+    display: none;
+}
+.process-box p{
+    z-index: 9;
+}
+.process-step p{
+    font-size: 20px;
+}
+.process-step h2{
+    font-size: 39px;
+}
+.process-step:after{
+    content: "";
+    border-top: 8px solid #04889800;
+    border-bottom: 8px solid #048898;
+    border-left: 8px solid #04889800;
+    border-right: 8px solid #048898;
+    display: inline-grid;
+    position: absolute;
+    left: -16px;
+    top: 0;
+}
+
+.foo{
+    background-color: #048898 !important;
+}
+.process-step:before{
+    content: "";
+    border-top: 8px solid #ff000000;
+    border-bottom: 8px solid #048898;
+    border-left: 8px solid #048898;
+    border-right: 8px solid #ff000000;
+    display: inline-grid;
+    position: absolute;
+    right: -16px;
+    top: 0;
+}
+.process-line-l{
+    background: white;
+    height: 4px;
+    position: absolute;
+    width: 136px;
+    right: -153px;
+    top: 64px;
+    z-index: 9;
+}
+.process-line-r{
+    background: white;
+    height: 4px;
+    position: absolute;
+    width: 136px;
+    left: -153px;
+    top: 63px;
+    z-index: 9;
+}
+
+  .name {
+    color: blue;
+  }
+  
+  .work {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  .about span {
+    font-size: 13px;
+  }
+  
+  .v-profile {
+    color: blue;
+    cursor: pointer;
+  }
+  
+  .box {
+    -webkit-box-shadow: 13px 12px 5px -10px rgba(196,194,196,0.72);
+    -moz-box-shadow: 13px 12px 5px -10px rgba(196,194,196,0.72);
+    box-shadow: 13px 12px 5px -10px rgba(196,194,196,0.72);
+  }
+  
+  .col-md-3 {
+    margin-top: 10px;
+  }
+  
+.card-main {
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0px 4px 8px 0px #283593;
+}
+
+.card-0 {
+    color: #fff;
+    background-color: #536DFE;
+    position: relative;
+    margin-left: 70px;
+    border-radius: 10px;
+    min-height: 312px;
+}
+
+.carousel-indicators li {
+    cursor: pointer;
+    border-radius: 50% !important;
+    width: 10px;
+    height: 10px;
+}
+
+.profile {
+    color: #000;
+    background-color: #FFD54F;
+    position: absolute;
+    left: -70px;
+    top: 17%;
+    border-radius: 8px;
+    border-top-left-radius: 0px; 
+    border-bottom-right-radius: 0px; 
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.open-quotes {
+    margin-left: 130px;
+    margin-top: 100px;
+}
+
+.content {
+    margin-left: 150px;
+    margin-right: 80px;
+}
+
+.close-quotes {
+    margin-bottom: 100px;
+    margin-right: 60px
+}
+
+@media screen and (max-width: 600px) {
+    .card-main {
+        padding: 50px 10px;
+    }
+
+    .card-0 {
+        min-height: 432px;
+    }
+
+    .profile {
+        top: 24%;
+    }
+
+    .profile-pic {
+        width: 90px;
+        height: 90px;
+    }
+
+    .open-quotes {
+        margin-left: 100px;
+    }
+
+    .content {
+        margin-left: 120px;
+        margin-right: 50px;
+    }
+
+    .close-quotes {
+        margin-right: 30px
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+        
+        body{
+            background-color:#f3f6fd ;
+        }
+        
+        .cards{
+            padding: 2% 7%;
+            color: #ffffff;
+          
+        }
+        
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul >li{
+            padding: 4px;
+        }
+        
+        ul > li:hover{
+            color:#957bda;
+            cursor: pointer;
+        }
+        
+        hr{
+            border-width: 3px;
+        }
+        
+        .social > i{
+            padding: 1%;
+            font-size: 15px;
+        }
+        
+        .social > i:hover{
+            color:#957bda;
+            cursor:pointer;
+        }
+        
+        .policy > div{
+            padding: 4px;
+        }
+        
+        .heading{
+            font-family: 'Titillium Web', sans-serif;
+            color: white;
+        }
+        
+        .divider{
+            border-top: 2px solid rgba(189, 196, 203, 0.5);;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <div class="row align-items-center text-center bgdiv mb-1">
+        <div class="col">
+          <div class="topbarElements d-inline-flex align-items-center">
+
+            <div class="text-start d-md-block d-none">
+              <p class="p-0 m-0 text-secondary cv"> <i class="fa fa-map-marker px-2" aria-hidden="true"></i>00100 4954, Workstyle Afrca, Nairobi Kenya</p>
+            </div>
+          </div>
+        </div>
+        <div class="col border-start border-end">
+          <div class="topbarElements d-inline-flex align-items-center">
+            <div class="text-start d-md-block d-none">
+              <p class="p-0 m-0 text-secondary cv"><i class="fa fa-envelope px-2" aria-hidden="true"></i> neartwiga@email.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="topbarElements d-inline-flex align-items-center">
+            <div class="text-start d-md-block d-none">
+              <p class="p-0 m-0 text-secondary cv"><i class="fa fa-phone-square px-2" aria-hidden="true"></i> +25417949650</p>
+            </div>
+          </div>
+        </div>
+    </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light p-0 m-0 bgnav">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold text-dark" href="#"><img src="/images/logo.png" alt="Near Twiga" height="72"> NEAR TWIGA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+       
+          <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#">Our Products</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Company
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                  <li><a class="dropdown-item" href="#">Contact us</a></li>
+                </ul>
+              </li>
+              <li class="nav-item flare">
+                <a class="nav-link mx-2" href="#">Get A Quote <span class="ms-2">&#x2192;</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="section bg-dark">
+        <div class="container">
+            <div class="d-md-flex align-items-center">
+                <div class="w-50">
+                    
+                    <h1 class="txt">Transforming ideas into reality.</h1>
+                  <p class="text-white">Near Twiga. Where creativity and technology come together to bring your vision to life. Let's build something great together</p>
+                </div>
+                <div class="d">
+                 <img src="/images/scre.jpg" alt="" class="img-fluid">
+                </div>
+         </div>
+        </div>
+
+      </div>
+      <div class="container my-5">
+        <div class="text-center mb-5">
+            <h4 class="text-primary fw-bold">About Us</h4>
+            <p>
+                Near Twiga is a forward-thinking software development company that is committed to tackling the major challenges facing our world today.
+            </p>
+        </div>
+        
+        <div class="d-md-flex align-items-center">
+            <div class="text">
+                
+                <p class="sdc">
+                     Our focus is on developing innovative software solutions that address issues such as climate change, human-wildlife conflict, and hunger. We believe that technology has the power to make a real difference in the lives of people and the planet.
+                </p>
+            </div>
+            <div class="text-center">
+                <img src="/images/afri.jpg" alt="" class="img-fluid" style="width: 70%;">
+            </div>
+
+        </div>
+
+        <div class="my-5">
+            <p>
+                we specialize in blockchain-based solutions, utilizing the latest software development technologies to deliver cutting-edge products that are secure, transparent, and efficient. From blockchain-based supply chain management systems to decentralized applications for social impact, we are dedicated to creating solutions that drive positive change. Join us in our mission to create a better future for all
+            </p>
+        </div>
+
+
+ 
+      </div>
+      <div class="section bg-white p-5">
+        <div class="container bg-white p-3">
+            <div class="pt-3">
+                <h3 class="text-center my-3 mb-3 text-primary">Our featured solutions</h3>
+                <div class="text-center mb-5">
+                    <p class="text-success">Discover our top software solutions in the featured products </p>
+                </div>   
+            </div>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-flex">
+                      <div class="im text-center">
+                        <img src="/images/tenebop.PNG" class="img-fluid rounded">
+                      </div>
+                      
+                      <div class="des text-center p-2">
+                        <h5>Tenebo</h5>
+                        <p> A web app, "Tenebo", allows users to adopt wildlife animals as NFTs and use the proceeds to build shelters for affected communities. Adopters receive a unique digital certificate and regular updates on their adopted animal and the shelter projects. Our platform helps to solve human-wildlife conflict and support conservation and community development efforts</p>
+                        <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Visit</a>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-flex m-3 text-center p-2">                      
+                      <div class="des">
+                        <h5 class="text-center">Hambre</h5>
+                        <p class="text-center">"Hambre", aims to tackle hunger by connecting farmers with the resources they need to succeed. Through the platform, farmers can access financing and equipment, while users can rent idle land and purchase farm inputs. By providing these resources and connections, we hope to empower farmers to increase food production and alleviate hunger in their communities</p>
+                        <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Visit</a>
+                    </div>
+                      <div class="im m">
+                        <img src="/images/hamb.PNG" class="img-fluid rounded" >
+                    </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-flex">
+                      <img src="image3.jpg" class="img-fluid rounded">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Product 3</h5>
+                        <p>A brief description of product 3</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              
+        </div>
+    </div>
+<div class="section bg-dark">
+    <div class="container p-5">
+        <div class="d-md-flex">
+            <div class="disp1 text-center">
+
+                <div class="d-flex">
+
+                    <div class="desc text-center">
+                        <div class="text-center p-3">                
+                            <h5 class="text-primary"> Services</h5>
+                            <h3 class="cc">We Provide Best  Services</h3></div>
+                        <h5 class="text-white">
+                            Digital Consulting
+                        </h5>
+                        <p class="text-white">we specialize in helping businesses navigate the ever-changing digital landscape.</p>
+                    </div>
+                    <div class="next">
+                        <div class="text-center p-3">
+                            <h5 class="text-white">Mobile App Solutions</h5>
+                            <p class="text-white">Transform your business with our cutting-edge mobile app solutions.</p>
+                        </div>
+                        <div class="text-center p-3">
+                            <h5 class="text-white">UX/UI Design</h5>
+                            <p class="text-white">Experience the difference with our top-notch UX/UI design services.</p>
+                        </div>
+
+                    </div>
+                    <div class="nxt">
+                        <div class="text-center p-3">
+                            <h5 class="text-white">
+                                Design & Development
+                            </h5>
+                            <p class="text-white">Elevate your brand with our comprehensive design and development services.</p>
+                        </div>
+                        <div class="text-center p-3">
+                            <h5 class="text-white">
+                                SEO Optimization
+                            </h5>
+                            <p class="text-white">
+                                Improve your online visibility and drive more traffic to your website with our expert SEO optimization services.
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <section class="our-blog p-0 m-0 bg-silver bg-light">
+        <div class="container work-process  pb-5 pt-5">
+            <div class="title mb-5 text-center">
+            <h3 class="text-success">Our <span class="site-color text-success fw-bold">Working Process</span></h3>
+        </div>
+            <!-- ============ step 1 =========== -->
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="process-box process-left" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="process-step">
+                                    <p class="m-0 p-0">Step</p>
+                                    <h2 class="m-0 p-0">01</h2>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <h5>Discover</h5>
+                                <p><small> Our team expertly conducts research, analysis and creates a customized plan for success.</small></p>
+                            </div>
+                        </div>
+                        <div class="process-line-l d-none"></div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5">
+                    <div class="process-point-right d-none"></div>
+                </div>
+            </div>
+            <!-- ============ step 2 =========== -->
+            <div class="row">
+                
+                <div class="col-md-5">
+                    <div class="process-point-left d-none"></div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5">
+                    <div class="process-box process-right" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="process-step">
+                                    <p class="m-0 p-0">Step</p>
+                                    <h2 class="m-0 p-0">02</h2>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <h5>Planning</h5>
+                                <p><small>Our team of experts creates detailed strategies and actionable plans to achieve your business goals and drive growth. </small></p>
+                            </div>
+                        </div>
+                        <div class="process-line-r d-none"></div>
+                    </div>
+                </div>
+    
+            </div>
+            <!-- ============ step 3 =========== -->
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="process-box process-left " data-aos="fade-right" data-aos-duration="1000">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="process-step">
+                                    <p class="m-0 p-0">Step</p>
+                                    <h2 class="m-0 p-0">03</h2>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <h5>Design & Dev</h5>
+                                <p><small> Our team crafts visually stunning and functional solutions for web and mobile platforms. </small></p>
+                            </div>
+                        </div>
+                        <div class="process-line-l d-none"></div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5">
+                    <div class="process-point-right d-none"></div>
+                </div>
+            </div>
+            <!-- ============ step 4 =========== -->
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="process-point-left d-none"></div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5">
+                    <div class="process-box process-right" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="process-step">
+                                    <p class="m-0 p-0">Step</p>
+                                    <h2 class="m-0 p-0">04</h2>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <h5>Testing</h5>
+                                <p><small>Our team of experts rigorously tests and validates all aspects of our digital solutions to deliver a seamless user experience..</small></p>
+                            </div>
+                        </div>
+                        <div class="process-line-r d-none"></div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <!-- ============ step 3 =========== -->
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="process-box process-left" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="process-step">
+                                    <p class="m-0 p-0">Step</p>
+                                    <h2 class="m-0 p-0">05</h2>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <h5>Project Deliver</h5>
+                                <p><small>Our team of experts ensures timely and efficient delivery of high-quality solutions, meeting your business goals and exceeding your expectations.. </small></p>
+                            </div>
+                        </div>
+                        <div class="process-line-l d-none"></div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5">
+                    <div class="process-point-right process-last d-none"></div>
+                </div>
+            </div>
+            <!-- ============ -->
+        </div>
+    </section>
+    <div class="container text-center mt-5 mb-2">
+        <h1 class="mb-0">Meet our Team</h1><span></span></div>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="bg-white p-3 text-center rounded box"><img class="img-fluid rounded-circle" src="/images/felix1.jpeg"  >
+                    <h5 class="mt-3 name">Ted Ogola</h5><span class="work d-block">Backend developer</span><span class="work d-block"></span>
+                    <div class="mt-4 about"><span></span></div>
+                    <div class="mt-4">
+                        <h6 class="v-profile">View Profile</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bg-white p-3 text-center rounded box"><img class="img-fluid rounded-circle" src="/images/felix2.jpeg" >
+                    <h5 class="mt-3 name">Felix Awere</h5><span class="work d-block">Frontend Developer</span><span class="work d-block"></span>
+                    <div class="mt-4 about"><span></span></div>
+                    <div class="mt-4">
+                        <h6 class="v-profile">View Profile</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bg-white p-3 text-center rounded box"><img class="img-fluid rounded-circle" src="/images/kag.jpeg" >
+                    <h5 class="mt-3 name">Peter Kagwe</h5><span class="work d-block">Backend Developer</span><span class="work d-block"></span>
+                    <div class="mt-4 about"><span></span></div>
+                    <div class="mt-4">
+                        <h6 class="v-profile">View Profile</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="https://i.imgur.com/MZm1LNz.jpg" width="90">
+                    <h5 class="mt-3 name">Kherld Hussein</h5><span class="work d-block">Frontend Developer</span><span class="work d-block"></span>
+                    <div class="mt-4 about"><span></span></div>
+                    <div class="mt-4">
+                        <h6 class="v-profile">View Profile</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="https://i.imgur.com/MZm1LNz.jpg" width="90">
+                    <h5 class="mt-3 name">Onchez Brian</h5><span class="work d-block">Backend Developer</span><span class="work d-block"></span>
+                    <div class="mt-4 about"><span></span></div>
+                    <div class="mt-4">
+                        <h6 class="v-profile">View Profile</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section bg-white mt-3">
+        <div class="container-fluid px-2 px-md-4 py-5 mx-auto ">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10 col-lg-9 col-xl-8">
+                    <div class="card card-main border-0 text-center">
+                        <h5 class="font-weight-bold mb-4">What our clients are saying<br>about us.</h5>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <div class="card border-0 card-0">
+                                        <div class="card profile py-3 px-4">
+                                            <div class="text-center">
+                                                <img src="/images/ted.jpeg" class="img-fluid profile-pic">
+                                            </div>
+                                            <h6 class="mb-0 mt-2">Ted Ogola</h6>
+                                            <small>Backend Developer</small>
+                                        </div>
+                                        <img class="img-fluid open-quotes" src="https://i.imgur.com/Hp91vdT.png" width="20" height="20">
+                                        <p class="content mb-0">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        <img class="img-fluid close-quotes ml-auto" src="https://i.imgur.com/iPcHyJK.png" width="20" height="20">
+                                    </div>
+                                </div>
+                                <div class="carousel-item active">
+                                    <div class="card border-0 card-0">
+                                        <div class="card profile py-3 px-4">
+                                            <div class="text-center">
+                                                <img src="https://i.imgur.com/oW8Wpwi.jpg" class="img-fluid profile-pic">
+                                            </div>
+                                            <h6 class="mb-0 mt-2">Ximena Vegara</h6>
+                                            <small>UI/UX Designer</small>
+                                        </div>
+                                        <img class="img-fluid open-quotes" src="https://i.imgur.com/Hp91vdT.png" width="20" height="20">
+                                        <p class="content mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.</p>
+                                        <img class="img-fluid close-quotes ml-auto" src="https://i.imgur.com/iPcHyJK.png" width="20" height="20">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card border-0 card-0">
+                                        <div class="card profile py-3 px-4">
+                                            <div class="text-center">
+                                                <img src="https://i.imgur.com/ndQx2Rg.jpg" class="img-fluid profile-pic">
+                                            </div>
+                                            <h6 class="mb-0 mt-2">John Paul</h6>
+                                            <small>UI/UX Designer</small>
+                                        </div>
+                                        <img class="img-fluid open-quotes" src="https://i.imgur.com/Hp91vdT.png" width="20" height="20">
+                                        <p class="content mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        <img class="img-fluid close-quotes ml-auto" src="https://i.imgur.com/iPcHyJK.png" width="20" height="20">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      </div>
+    <div class="section bg-dark foo">
+        <div class=" mt-5 mx-0">
+            
+            <div class="cards mx-5">
+                <div class="row mb-4 ">
+                    
+                    <div class="col-md-4 col-sm-11 col-xs-11">
+                        <div class="footer-text pull-left">
+                             <div class="d-flex">
+                                 <h1 class="font-weight-bold mr-2 px-3" style="color:#16151a; background-color:#957bda" > T </h1>
+                                 <h1 style="color: #957bda">Devs</h1>
+                             </div>
+                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi non pariatur numquam animi nam at impedit odit nisi.</p>
+    
+                             <div class="social mt-2 mb-3">
+    
+                                <i class="fa fa-facebook-official fa-lg" ></i>
+                                <i class="fa fa-instagram fa-lg"></i>
+                                <i class="fa fa-twitter fa-lg"></i>
+                                <i class="fa fa-linkedin-square fa-lg"></i>
+                                <i class="fa fa-facebook"></i>
+    
+                             </div>
+                         
+                         </div>
+                    </div>
+                    
+                    
+                    <div class="col-md-2 col-sm-1 col-xs-1 mb-2"></div>
+                    
+                    <div class="col-md-2 col-sm-4 col-xs-4">
+                 
+                        <h5 class="heading">Services</h5>
+                        <ul >
+                            <li>IT Consulting -</li>
+                            <li>Development</li>
+                            <li>Cloud</li>
+                            <li>DevOps & Support</li>
+                        </ul>
+                 
+                    </div>
+                 
+                 
+                    <div class="col-md-2 col-sm-4 col-xs-4">
+                 
+                        <h5 class="heading">Industries</h5>
+                        <ul class="card-text">
+                            <li>Finance</li>
+                            <li>Public Sector</li>
+                            <li>Smart Office</li>
+                            <li>Retail</li>
+                        </ul>
+                 
+                    </div>
+    
+                 
+                     <div class="col-md-2 col-sm-4 col-xs-4">
+    
+                        <h5 class="heading">Company</h5>
+                        <ul class="card-text">
+                            <li>About Us</li>
+                            <li>Blog</li>
+                            <li>Contact</li>
+                            <li>Join Us</li>
+                        </ul>
+    
+                     </div>
+    
+                </div>
+                
+                
+                <div class="divider mb-4" >   
+                </div>
+    
+               
+                <div class="row" style="font-size:10px;">
+                
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    
+                    <div class="pull-left">
+                        
+                        <p><i class="fa fa-copyright"></i> 2020 thezpdesign</p>
+                        
+                    </div>
+                    
+                </div>
+                
+                
+    
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                   
+                   
+                    <div class="pull-right mr-4 d-flex policy">
+                        
+                       <div>Terms of Use</div>
+                       <div>Privacy Policy</div>
+                       <div>Cookie Policy</div>
+                        
+                    </div>
+                    
+                    
+                    
+                </div>
+                 
+                 
+                 
+             </div>
+            </div>
+            
+        </div>
+    </div>
+
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
