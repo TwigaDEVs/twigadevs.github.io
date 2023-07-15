@@ -1,2 +1,2 @@
 # twigadevs.github.io
-TwigaDevs develoopers page
+twaja hivi karibuni
